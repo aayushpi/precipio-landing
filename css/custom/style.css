@@ -1,0 +1,103 @@
+/* =============================================================================
+   Box Sizing
+   Apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/
+   border-box polyfill for IE 6/7: https://github.com/Schepp/box-sizing-polyfill#readme
+   ========================================================================== */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  *behavior: url(boxsizing.htc); }
+
+
+
+/* =============================================================================
+   Site Styles
+   ========================================================================== */
+body{
+  background: url('../../img/bg.png') no-repeat;
+  background-size: cover;
+}
+
+#main{
+  background: url('../../img/bg2.png') no-repeat;
+  background-color: #f15a29;
+  background-color: rgba(241,90,41,0.3);
+  background-size: cover;
+  height: 100%;
+  display: none;
+}
+
+#white, #logo{
+  position: absolute;
+  top: 70px;
+  left: 90px;
+  text-indent: -9001em;
+  height: 117px;
+  width: 194px;
+  margin: 0;
+}
+
+#white{
+  background: url('../../img/logo_w.png') no-repeat;
+}
+#logo{
+  background: url('../../img/logo_c.png') no-repeat;
+  display: none;
+  width: 243px;
+  height: 146px;
+}
+
+#logo {
+    margin: 0;
+}
+#block {
+  height: 250px;
+  background-color: white;
+  margin-left: -1920px;
+  width: 100%;
+  position: absolute;
+}
+
+#block p {
+  display: none;
+  position: absolute;
+  list-style: none;
+  font-weight: bold;
+  top: 10px;
+  left: 400px;
+  font-size: 2em;
+  line-height: 1.25;
+}
+#block li:last-child {
+  color: #f05a28;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 0.6em;
+}
+#copyright a {
+  color: #f05a28;
+  font-size: 2em;
+}
+
+#main p{
+  list-style: none;
+  color:  white;
+  position: absolute;
+  padding: 0;
+  left: 90px;
+  font-size: 1.5em;
+  top: 170px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#top {
+    background-color: white;
+}
+#top ul {
+    list-style: none;
+    text-align: right;
+    margin: 10px 0 0 0;
+    padding-bottom: 10px;
+    padding-right: 5%;
+}
